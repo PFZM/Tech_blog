@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
     });
   } catch (err) {
     console.error(err);
-    res.status(400).json({ message: "error" });
+    res.status(500).json({ message: "error" });
   }
 });
 
@@ -40,7 +40,7 @@ router.post("/login", async (req, res) => {
     });
   } catch (err) {
     console.error(err);
-    res.status(400).json({ message: "error" });
+    res.status(500).json({ message: "error" });
   }
 });
 
