@@ -16,18 +16,17 @@ const seedDatabase = async () => {
     });
     console.log("\n---- Users seeded ----\n");
 
-    for (const post of postData) {
-      await Post.create({
-        ...post,
-        user_id: users[Math.floor(Math.random() * users.length)].id,
-      });
-    }
+    const post = await Post.bulkCreate(postData);
+
+    // for (const post of postData) {
+    //   await Post.create({
+    //     ...post,
+    //     user_id: users[Math.floor(Math.random() * users.length)].id,
+    //   });
+    // }
     console.log("\n---- Post seeded ----\n");
 
-    const comment = await Comment.bulkCreate(commentData, {
-      individualHooks: true,
-      returning: true,
-    });
+    const comment = await Comment.bulkCreate(commentData);
 
     console.log("\n---- Comment seeded ----\n");
     process.exit(0);

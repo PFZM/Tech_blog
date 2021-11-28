@@ -1,14 +1,17 @@
 [
   {
     "title": "Javascript",
-    "content": "Best programming language"
+    "content": "Best programming language",
+    "user_id": 1
   },
   {
     "title": "MySQL",
-    "content": "Let's create some databases"
+    "content": "Let's create some databases",
+    "user_id": 1
   },
   {
     "title": "Node.Js",
-    "content": "You need to learn this"
+    "content": "You need to learn this",
+    "user_id": 1
   }
 ]

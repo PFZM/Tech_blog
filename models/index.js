@@ -30,7 +30,7 @@ Comment.belongsTo(Post, {
 });
 
 Post.hasMany(Comment, {
-  foreignKey: "post_id",
+  foreignKey: "comment_id",
   onDelete: "NO ACTION",
 });
 
