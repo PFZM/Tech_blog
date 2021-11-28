@@ -25,10 +25,11 @@ Post.init(
     },
     comment_id: {
       type: DataTypes.INTEGER,
-      references: {
-        model: "comment",
-        key: "id",
-      },
+      // references: {
+      //   model: "comment",
+      //   key: "id",
+      // },
+      // A Post will have many comments but it will not store just one :P
     },
     user_id: {
       type: DataTypes.INTEGER,
