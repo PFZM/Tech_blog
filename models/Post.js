@@ -23,14 +23,7 @@ Post.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    comment_id: {
-      type: DataTypes.INTEGER,
-      // references: {
-      //   model: "comment",
-      //   key: "id",
-      // },
-      // A Post will have many comments but it will not store just one :P
-    },
+
     user_id: {
       type: DataTypes.INTEGER,
       references: {

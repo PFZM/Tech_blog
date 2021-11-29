@@ -35,21 +35,6 @@ User.init(
         len: [8],
       },
     },
-    license: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    license_number: {
-      type: DataTypes.NUMBER,
-      allowNull: false,
-      validate: {
-        isNumeric: true,
-      },
-    },
-    instrument_rating: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-    },
   },
   {
     hooks: {
